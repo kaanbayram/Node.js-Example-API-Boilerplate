@@ -30,15 +30,12 @@ app.use(express.json());
 
 const db = config.get('mongoURI');
 
-//const certFileBuf = fs.readFileSync('C:\Users\kbayram\Desktop\reacttype\node_modules\mongoose\lib\error\serverSelection')
 
 mongoose.connect(db,{
     useNewUrlParser:true,
     useUnifiedTopology: true,
     sslValidate:false,
     useCreateIndex: true,
-    // authMechanism: 'MONGODB-X509',
-    // authSource :'$external'
 }).then(()=> console.log('MongoDB Connected...')).catch(
     err => console.log(err)
 );

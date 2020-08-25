@@ -1,4 +1,4 @@
-# Node.js-Example-API-Structure
+# Node.js-Example-API-Boilerplate
 Node.js Example API Structure
 
 
